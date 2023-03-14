@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&family=JetBrains+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+		<title>Calculator | Diaz</title>
+	</head>
+	<body>
+		<div class="container">
+			<textarea name="" id="output" rows="1" readonly>0</textarea>
+			<div class="buttons">
+				<button id="ac" onclick="clearOutput()">AC</button>
+				<button class="opr" onclick="setNumber('%')">⁒</button>
+				<button class="opr" onclick="setNumber('/')">&divide;</button>
+				<button id="del" class="material-icons" onclick="backspace()">
+					backspace
+				</button>
+				<button onclick="setNumber(7)">7</button>
+				<button onclick="setNumber(8)">8</button>
+				<button onclick="setNumber(9)">9</button>
+				<button class="opr" onclick="setNumber('*')">&times;</button>
+				<button onclick="setNumber(4)">4</button>
+				<button onclick="setNumber(5)">5</button>
+				<button onclick="setNumber(6)">6</button>
+				<button class="opr" onclick="setNumber('-')">&minus;</button>
+				<button onclick="setNumber(1)">1</button>
+				<button onclick="setNumber(2)">2</button>
+				<button onclick="setNumber(3)">3</button>
+				<button class="opr" onclick="setNumber('+')">&plus;</button>
+				<button class="attr" onclick="setNumber('.')">.</button>
+				<button onclick="setNumber(0)">0</button>
+				<div id="kurung">
+					<button class="attr" onclick="setNumber('(')">(</button>
+					<button class="attr" onclick="setNumber(')')">)</button>
+				</div>
+				<button id="run" onclick="runIt()">=</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+assetz/
+media/
+*.gif
+*.jpg
+*.png
+assets/
+node_modules/

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans';
+	color: white;
+}
+body {
+	background: url(assets/win3.jpg);
+	background-size: cover !important;
+	min-height: 100vh;
+	background-position: center;
+	padding: 1rem;
+	background-repeat: no-repeat;
+}
+body.jdm {
+	background: url(assets/jdm.jpg);
+}
+body.win2 {
+	background: url(assets/win2.jpg);
+}
+body.mac1 {
+	background: url(assets/mac1.jpg);
+}
+body.mac2 {
+	background: url(assets/mac2.jpg);
+}
+.head {
+	margin-bottom: 1rem;
+}
+.btn {
+	color: black;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+	background-color: greenyellow;
+}
+input {
+	padding: 0.5rem 1rem;
+	border-radius: 0.3rem;
+	border: none;
+	margin-bottom: 1rem;
+	color: black;
+}
