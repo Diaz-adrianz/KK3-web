@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DIAZ - Media Query</title>
+
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+			header {
+				width: 100%;
+				padding: 1rem;
+				position: fixed;
+			}
+			h1 {
+				text-align: center;
+				margin-bottom: 1rem;
+			}
+			nav {
+				display: flex;
+				justify-content: center;
+			}
+			nav ul {
+				list-style: none;
+			}
+			nav ul li {
+				display: inline-block;
+				padding: 0 1rem;
+				font-size: 1.5rem;
+			}
+			nav a {
+				transition: 0.3s;
+				color: #888;
+				text-decoration: none;
+			}
+			nav a:hover {
+				font-weight: bold;
+				color: greenyellow;
+			}
+
+			@media (max-width: 400px) {
+				h1 {
+					font-size: 1.5rem;
+				}
+				nav ul,
+				nav ul li {
+					display: block;
+					text-align: center;
+					margin: 0.5rem 0;
+				}
+				nav a {
+					font-size: 1.2rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Chocoding Company</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Testimonial</a></li>
+					<li><a href="#">Favorite</a></li>
+					<li><a href="#">Promos</a></li>
+					<li><a href="#">Deals</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Location</a></li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>
