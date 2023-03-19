@@ -40,6 +40,10 @@
     </div>
 
     <hr>
+    
+    <?php if (@$_SESSION['alert'] ) : ?>
+        <div class="alert alert-<?= $_SESSION['alert']['decorator'] ?>"><?= $_SESSION['alert']['pesan'] ?></div>
+    <?php endif ?>
 
     <div class="table-responsive">
         <table class="table border table-striped table-bordered mx-auto">
@@ -47,6 +51,7 @@
                 <tr class="bg-dark text-white">
                     <th>Aksi</th>
                     <th>#</th>
+                    <th>Foto</th>
                     <th class="text-nowrap ">
                         NIS
                         <a href="?sort=nis&order=asc" class="link">🔼</a>
@@ -93,6 +98,9 @@
                             <a href="delete.php?nis=<?= $siswa['nis'] ?>" class="btn btn-danger ri-delete-bin-fill"></a>
                         </td>
                         <td class="text-nowrap"><?= $i++ ?></td>
+                        <td>
+                            <img src="<?= @$siswa['file'] ? $siswa['file'] :'assets/images/default_picture.png' ?>" class="mb-3" width="100">
+                        </td>
                         <td class="text-nowrap"><?= $siswa['nis'] ?></td>
                         <td class="text-nowrap"><?= $siswa['nama_lengkap'] ?></td>
                         <td class="text-nowrap"><?= $siswa['jenis_kelamin'] ?></td>

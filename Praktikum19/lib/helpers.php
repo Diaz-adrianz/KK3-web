@@ -5,13 +5,13 @@
         return "http://localhost/praktikum17";
     }
 
-    function flash($tipe, $pesan = '') {
+    function flash($tipe, $decorator = '', $pesan = '') {
         if (empty($pesan)) {
             $pesan = @$_SESSION[$tipe];
             unset($_SESSION[$tipe]);
             return $pesan;
         } else {
-            $_SESSION[$tipe] = $pesan;
+            $_SESSION[$tipe] = array('decorator' => $decorator, 'pesan' => $pesan);
         }
     }
 
